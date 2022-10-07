@@ -1,4 +1,4 @@
-import { ADD_ROLE_START, ADD_ROLE_SUCCESS, REMOVE_ROLE_START, UPDATE_ROLE_START } from "../contants/RoleContant";
+import { ADD_ROLE_START, REMOVE_ROLE_START, UPDATE_ROLE_START } from "../contants/RoleContant";
 import { fork, put, takeLatest } from 'redux-saga/effects'
 import { addRoleSuccess, removeRoleSuccess, updateRoleSuccess } from "../actions/RoleAction";
 
