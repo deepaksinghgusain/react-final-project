@@ -40,7 +40,7 @@ const Product = () => {
                                 <td>{index + 1}</td>
                                 <td>{product.name}</td>
                                 <td>$ {product.price}</td>
-                                <td>{product.status == '1' ? 'Active': 'Inactive'}</td>
+                                <td>{product.status === '1' ? 'Active': 'Inactive'}</td>
                                 <td>
                                     <Link to={`/accounts/edit-product/${index}`} className='btn btn-outline-primary mx-2'>
                                         Edit

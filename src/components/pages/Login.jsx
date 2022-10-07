@@ -33,11 +33,7 @@ const Login = () => {
         }else{
             setValidated(true);
 
-            let check = user.find((usr,index) => {
-                if(usr.email === formValue.email && usr.password === formValue.password) {
-                    return usr
-                }
-            }) 
+            let check = user.find((usr,index) => usr.email === formValue.email && usr.password === formValue.password) 
 
             if(check) {
 

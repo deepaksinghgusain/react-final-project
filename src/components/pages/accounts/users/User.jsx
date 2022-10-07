@@ -31,7 +31,7 @@ const User = () => {
                                 <td>{usr.name}</td>
                                 <td>{usr.email}</td>
                                 <td>{usr.role}</td>
-                                <td>{usr.status == '1' ? 'Active' : 'Inactive'}</td>
+                                <td>{usr.status === '1' ? 'Active' : 'Inactive'}</td>
                                 <td>
                                     <Link to={`/accounts/edit-user/${index}`} className='btn btn-outline-primary mx-2'>
                                         Edit
